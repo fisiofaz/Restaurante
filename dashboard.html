@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Gestão de Pedidos</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dashboard de Pedidos e Rastreamento</h1>
+        </header>
+
+        <section class="tracking">
+            <h3>Rastreamento em Tempo Real</h3>
+            <div id="map" style="height: 400px;"></div>
+        </section>
+
+        <section class="order-status">
+            <h3>Status do Pedido</h3>
+            <p id="current-status"></p>
+            <button onclick="updateStatus()">Atualizar Status para 'A Caminho'</button>
+        </section>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

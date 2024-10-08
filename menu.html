@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurante</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Menu</h1>
+        </header>
+
+        <section class="menu-items">
+            <div class="item">
+                <h3>Pizza Margherita</h3>
+                <p>Preço: R$30</p>
+                <button onclick="addToCart('Pizza Margherita', 30)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="item">
+                <h3>Burger Clássico</h3>
+                <p>Preço: R$20</p>
+                <button onclick="addToCart('Burger Clássico', 20)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <footer>
+            <button onclick="goToOrders()">Ver Pedidos</button>
+        </footer>
+    </div>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>

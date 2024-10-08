@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Completo - Restaurante</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="orders.html">Meus Pedidos</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Cardápio Completo</h1>
+        <p>Explore nossas deliciosas opções abaixo!</p>
+    </header>
+
+    <section class="menu-section">
+        <h2>Pizzas</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="./img/Pizza Margherita.jpg" alt="Pizza Margherita" class="item-img">
+                <h3>Pizza Margherita</h3>
+                <p>Ingredientes: Molho de tomate, queijo mussarela, manjericão.</p>
+                <p>Preço: R$30</p>
+                <button onclick="addToCart('Pizza Margherita', 30)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="item">
+                <img src="images/pizza-pepperoni.jpg" alt="Pizza Pepperoni" class="item-img">
+                <h3>Pizza Pepperoni</h3>
+                <p>Ingredientes: Molho de tomate, queijo, pepperoni.</p>
+                <p>Preço: R$35</p>
+                <button onclick="addToCart('Pizza Pepperoni', 35)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Burgers</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="images/burger-classico.jpg" alt="Burger Clássico" class="item-img">
+                <h3>Burger Clássico</h3>
+                <p>Ingredientes: Pão, carne bovina, queijo, alface, tomate.</p>
+                <p>Preço: R$20</p>
+                <button onclick="addToCart('Burger Clássico', 20)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="item">
+                <img src="images/burger-bacon.jpg" alt="Burger com Bacon" class="item-img">
+                <h3>Burger com Bacon</h3>
+                <p>Ingredientes: Pão, carne bovina, queijo, bacon, alface.</p>
+                <p>Preço: R$25</p>
+                <button onclick="addToCart('Burger com Bacon', 25)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Restaurante. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
