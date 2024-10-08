@@ -1,9 +1,6 @@
 /* Estilo para o layout da página principal */
 body {
-    font-family: Arial, sans-serif;
     background-color: var(--color-bc-bg);
-    margin: 0;
-    padding: 0;
 }
 
 nav {
@@ -26,6 +23,7 @@ nav {
 
 .nav ul li a {
     color: var(--color-btn-text);
+    font-size: 2rem;
     text-decoration: none;
     padding: 1rem 2rem;
     background-color: var(--color-bc-btn);
