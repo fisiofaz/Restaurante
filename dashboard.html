@@ -9,22 +9,34 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
+    <main>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="orders.html">Meus Pedidos</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <header class="header">
             <h1>Dashboard de Pedidos e Rastreamento</h1>
         </header>
-
-        <section class="tracking">
-            <h3>Rastreamento em Tempo Real</h3>
-            <div id="map" style="height: 400px;"></div>
-        </section>
-
+        
         <section class="order-status">
             <h3>Status do Pedido</h3>
             <p id="current-status"></p>
             <button onclick="updateStatus()">Atualizar Status para 'A Caminho'</button>
         </section>
-    </div>
+        
+        <section class="tracking">
+            <h3>Rastreamento em Tempo Real</h3>
+            <div id="map" style="height: 35rem;  width: 105%;"></div>
+        </section>        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurante Churrasquito. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="js/dashboard.js"></script>
 </body>

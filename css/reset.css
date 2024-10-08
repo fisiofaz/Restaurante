@@ -27,5 +27,5 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--color-bc-bg);
-    
+    width: 95%;
 }
