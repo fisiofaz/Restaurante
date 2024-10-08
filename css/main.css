@@ -1,8 +1,4 @@
 /* Estilo para o layout da página principal */
-body {
-    background-color: var(--color-bc-bg);
-}
-
 nav {
     background-color: var(--color-bc-btn);
     padding: 1.5rem;
